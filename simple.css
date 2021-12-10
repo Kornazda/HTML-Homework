@@ -1,0 +1,144 @@
+body
+{
+    background-image: url(" chunky.jpg ");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+h1
+{
+    color:rgb(129, 10, 84);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.top-contest
+{
+    background-color: rgb(214, 210, 210);
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0, 5, 5 lightgray;
+}
+
+h3
+{
+    height: 100%;
+    background-color: rgb(114, 113, 113);
+    color: white;
+    line-height: 60px;
+    padding: 0 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+label
+{
+    display: inline-block;
+    height: 100%;
+    padding: 0 50px;
+    margin: 0 30px;
+    line-height: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: grey;
+    cursor: pointer;
+}
+
+label:hover
+{
+    color: black;
+}
+
+.photo-gallery
+{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.pic
+{
+    position: relative;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px, 3px, 5px lightgray;
+}
+
+.pic img{
+    height:100%;
+    width:100%;
+    border-radius: 10px;
+}
+
+#check1:checked ~ .container .photo-gallery .pic{
+    opacity: 1; 
+    transform: scale(1);
+    position: relative
+    
+}
+#check2:checked ~ .container .photo-gallery .music{
+    opacity: 1; 
+    transform: scale(1);
+    position: relative
+}
+#check2:checked ~ .container .photo-gallery .alumni,
+#check2:checked ~ .container .photo-gallery .art{
+    opacity: 0; 
+    transform: scale(0);
+    position: absolute;
+}
+
+#check3:checked ~ .container .photo-gallery .music{
+    opacity: 1; 
+    transform: scale(1);
+    position: relative
+}
+#check3:checked ~ .container .photo-gallery .realworldtraining,
+#check3:checked ~ .container .photo-gallery .alumni{
+    opacity: 0; 
+    transform: scale(0);
+    position: absolute;
+}
+
+#check4:checked ~ .container .photo-gallery .music{
+    opacity: 1; 
+    transform: scale(1);
+    position: relative
+}
+#check4:checked ~ .container .photo-gallery .bathrooms,
+#check4:checked ~ .container .photo-gallery .realworldtraining{
+    opacity: 0; 
+    transform: scale(0);
+    position: absolute;
+}
+
+#check5:checked ~ .container .photo-gallery .music{
+    opacity: 1; 
+    transform: scale(1);
+    position: relative
+}
+#check5:checked ~ .container .photo-gallery .alumni,
+#check5:checked ~ .container .photo-gallery .art{
+    opacity: 0; 
+    transform: scale(0);
+    position: absolute;
+}
+
+#check5:checked ~ .container .photo-gallery .music{
+    opacity: 1; 
+    transform: scale(1);
+    position: relative
+}
+#check6:checked ~ .container .photo-gallery .alumni,
+#check6:checked ~ .container .photo-gallery .art{
+    opacity: 0; 
+    transform: scale(0);
+    position: absolute;
+}
+
+
